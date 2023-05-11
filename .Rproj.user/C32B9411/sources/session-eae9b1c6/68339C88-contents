@@ -1,0 +1,19 @@
+#' The 'efficient_SIR_Stan' package.
+#'
+#' @description This package allows for estimating time-dependent transmission rates
+#' in homogeneous and heterogeneous populations. Three different methods for the 
+#' time-dependence are included: Brownian motion, splines and Gaussian processes. 
+#'
+#' @docType package
+#' @name efficient_SIR_Stan-package
+#' @aliases package
+#' @useDynLib package, .registration = TRUE
+#' @import methods
+#' @import Rcpp
+#' @importFrom rstan sampling
+#'
+#' @references
+#' Stan Development Team (2022). RStan: the R interface to Stan. R package version 2.21.7. https://mc-stan.org
+#'
+
+

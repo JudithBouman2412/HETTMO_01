@@ -1,0 +1,26 @@
+{
+    "id": "2697B318",
+    "path": "~/Documents/GitHub/efficient_SIR_Stan/src/stanfiles/model/homogeneous_splines.stan",
+    "project_path": "src/stanfiles/model/homogeneous_splines.stan",
+    "type": "stan",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1683113440690.0,
+    "source_on_save": false,
+    "relative_order": 4,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "138,30",
+        "scrollLine": "133"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1683115337,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1683115337320,
+    "read_only": false,
+    "read_only_alternatives": []
+}

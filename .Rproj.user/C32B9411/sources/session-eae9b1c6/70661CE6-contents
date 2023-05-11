@@ -1,0 +1,11 @@
+# efficient_SIR_Stan
+
+R-package based on Stan to efficiently implement time-dependent transmission and stratification.
+
+# References
+
+The implementation of the splines is based on "[Splines in Stan](https://mc-stan.org/users/documentation/case-studies/splines_in_stan.html)" written by M. Kharratzadeh.
+
+The implementation of the Brownian motion and the Trapeziodal solver were heavily inspired by "[Bayesian analysis of diffusion driven multi-type epidemic models with application to COVID-19](https://arxiv.org/abs/2211.15229)" by Bouranis et al.
+
+The implementation of the SEIR model and the fit to case and seroprevalence data follows "[Estimation of SARS-CoV-2 mortality during the early stages of an epidemic: A modeling study in Hubei, China and six regions in Europe](https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003189)" by Hauser et al and "[Bayesian workflow for disease transmission modeling in stan](https://onlinelibrary.wiley.com/doi/full/10.1002/sim.9164)" by Grinsztajn et al.

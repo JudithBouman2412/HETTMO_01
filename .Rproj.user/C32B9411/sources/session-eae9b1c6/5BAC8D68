@@ -1,0 +1,26 @@
+{
+    "id": "5BAC8D68",
+    "path": "~/Documents/GitHub/efficient_SIR_Stan/src/stanfiles/functions/generic_functions.stan",
+    "project_path": "src/stanfiles/functions/generic_functions.stan",
+    "type": "stan",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1683118161228.0,
+    "source_on_save": false,
+    "relative_order": 7,
+    "properties": {
+        "source_window_id": "",
+        "Source": "Source",
+        "cursorPosition": "61,24",
+        "scrollLine": "46"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1683113574,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1683113574,
+    "read_only": false,
+    "read_only_alternatives": []
+}
