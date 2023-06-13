@@ -1,5 +1,5 @@
 
-#' Title
+#' standata
 #'
 #' @param data
 #' @param homogeneous
@@ -136,7 +136,7 @@ standata <- function( data,
   return(c(priors, fixed_pars))
 }
 
-#' Title
+#' create_function_initial_values
 #'
 #' @param data_list
 #' @param homogeneous
@@ -192,7 +192,7 @@ create_function_initial_values <- function(data_list,
 }
 
 
-#' Title
+#' sampling_model
 #'
 #' @param x
 #' @param y
