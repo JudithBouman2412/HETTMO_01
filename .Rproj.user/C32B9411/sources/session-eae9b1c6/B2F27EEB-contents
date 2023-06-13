@@ -1,2 +1,0 @@
-library("rstantools")
-rstan_create_package(path = 'package')

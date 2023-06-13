@@ -1,8 +1,9 @@
 // transformed data block for splines: create b_hat
+
 int num_basis = num_knots + spline_degree - 1; // total number of B-splines
 int order = spline_degree + 1;
 
-// create extended knots for fitting the spline
+// create extended knots for fitting the splineC
 vector[spline_degree + num_knots] ext_knots_temp;
 vector[2*spline_degree + num_knots] ext_knots; // set of extended knots
 ext_knots_temp = append_row(rep_vector(knots[1], spline_degree), knots);
@@ -21,14 +22,13 @@ for (i in 2:num_knots){
 }
 int_knots[num_int] = knots[num_knots];
 
-// Build the spline --> this spline stays the same now for the rest of the fitting procedure 
-// and is uniquely defined by the knots and the degree of the splines 
+// Build the spline --> this spline stays the same now
 matrix[num_basis, num_int] B;
 
 for (indicator in 1:num_basis){
   B[indicator,:] = to_row_vector(build_b_spline( int_knots, ext_knots, indicator, spline_degree + 1));
 }
-B[num_knots + spline_degree - 1, num_int] = 1; 
+B[num_knots + spline_degree - 1, num_int] = 1; // --> this is in the manual, but I do not understand why...
 
 // find support for each spline
 matrix[num_basis, (num_knots-1) ] support_bs = find_support( ext_knots, order, knots, num_basis );

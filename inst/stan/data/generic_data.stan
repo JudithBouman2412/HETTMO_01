@@ -16,17 +16,3 @@ real rtol;
 real atol;
 int max_num_steps;
 int inference;
-
-array[num_t] int data_pre;
-int t_survey_start;
-int t_survey_end;
-int n_infected_survey;
-int n_tested_survey;
-
-int t_detectionSwitch;
-real beta_fixed;
-real sens;
-real spec;
-real p_detect1;
-
-real fraction_pre;

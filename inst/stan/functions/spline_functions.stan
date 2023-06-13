@@ -1,5 +1,3 @@
-// These functions are taken from or inspired by "splines in Stan" from M. Kharratzadeh
-
 vector build_b_spline(array[] real t, data vector ext_knots, data int index, data int order);
 vector build_b_spline(array[] real t, data vector ext_knots, data int index, data int order){
   // INPUTS:
@@ -100,7 +98,7 @@ matrix ana_B( data matrix B, data vector ext_knots, data array[] real int_knots,
 
     return b_hat;
   }
-  
+
 // function to calculate full spline for new values
 real analytical_bspline( data matrix b_hat, vector a, real t_new, data vector knots, data int order ) {
 
