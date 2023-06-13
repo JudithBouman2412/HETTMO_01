@@ -1,12 +1,11 @@
 Package: HETTMO
-Title: What the Package Does (One Line, Title Case)
+Title: Efficiently implement time-dependent transmission and stratification of SEIR model in Stan
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Judith", "Bouman", , "judith.bouman@unibe.ch", role = c("cre"),
+           comment = c(ORCID = "0000-0003-3781-0675"))
+Description: Efficiently implement time-dependent transmission and stratification of SEIR model in Stan
+License: `use_gpl3_license()`
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.1
