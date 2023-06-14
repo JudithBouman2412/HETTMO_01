@@ -60,7 +60,7 @@ create_B <- function(t, order, knots){
   return(B)
 }
 
-#' ana.B
+#' ana_B
 #'
 #' From a matrix B, containing the values of each basic spline (rows) for the knots
 #' and (degree - 1) points between the knots, this function calculates the support
@@ -81,7 +81,7 @@ create_B <- function(t, order, knots){
 #' @export
 #'
 #' @examples
-ana.B <- function(B, ext_knots, int_knots, order, knots, num_basis ){
+ana_B <- function(B, ext_knots, int_knots, order, knots, num_basis ){
   # t is the t used to set-up matrix B
 
   # empty matrix to save estimated coefficients for each b_spline and each area at which it is defined

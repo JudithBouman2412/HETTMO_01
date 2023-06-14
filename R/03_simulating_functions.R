@@ -1,4 +1,4 @@
-# functions to simulate data
+# functions to simulate data using the spline-based time-implementation
 
 #' set_parameters
 #'
@@ -53,7 +53,7 @@ set_parameters <- function(stratified = FALSE,
 
 #' create_contactmatrix_GE
 #'
-#' Function to construct a contact matrix based on Prem et al. (2021) and the age
+#' Function to construct a contact matrix based on Prem et al. (2021) for Switzerland and the age
 #' distribution of the Canton of Geneva (2021). Age groups are fixed at 0-19, 20-59
 #' and 60+.
 #'
@@ -360,7 +360,7 @@ simulate_data <- function( params,
     B <- create_B(int_knots, params$order, params$knots )
 
     # Get coefficients and their support
-    B_splines <- ana.B(B, ext_knots, int_knots, params$order, params$knots, num_basis )
+    B_splines <- ana_B(B, ext_knots, int_knots, params$order, params$knots, num_basis )
 
     params$b_hat = B_splines[[1]]
     params$b_support = B_splines[[2]]
@@ -436,7 +436,7 @@ simulate_strat_data <- function( params,
     B <- create_B(int_knots, params$order, params$knots )
 
     # Get coefficients and their support
-    B_splines <- ana.B(B, ext_knots, int_knots, params$order, params$knots, num_basis )
+    B_splines <- ana_B(B, ext_knots, int_knots, params$order, params$knots, num_basis )
 
     params$b_hat = B_splines[[1]]
     params$b_support = B_splines[[2]]

@@ -1,11 +1,14 @@
 Package: HETTMO
-Title: Efficiently implement time-dependent transmission and stratification of SEIR model in Stan
+Title: HEterogeneous Time-dependent Transmission MOdel (HETTMO)
 Version: 0.0.0.9000
-Authors@R: 
-    person("Judith", "Bouman", , "judith.bouman@unibe.ch", role = c("cre"),
-           comment = c(ORCID = "0000-0003-3781-0675"))
-Description: Efficiently implement time-dependent transmission and stratification of SEIR model in Stan
-License: `use_gpl3_license()`
+Authors@R: c(person("Judith", "Bouman", email="judith.bouman@unibe.ch", role = c("cre", "aut"), comment = c(ORCID = "0000-0003-3781-0675")), 
+     person("Julien", "Riou", role = c("aut"), comment = c(ORCID = "0000-0002-3808-2852")),
+     person("Anthony", "Hauser", role = c("aut"),  comment = c(ORCID="0000-0002-7221-1929")) )
+Description: This package supplies functions that can efficiently implement time-dependent 
+      transmission in a stratified SEIR model in Stan. It includes three different methods of 
+      implementing the time dependence: Brownian motion, splines and a Gausian process. More 
+      details on the model can be found in the publication linked to this R-package (LINK). 
+License: use_gpl3_license()
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.1
